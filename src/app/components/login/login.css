@@ -1,0 +1,932 @@
+
+#LoginContainer{
+	height:100%;
+	margin:auto;
+	overflow:auto;
+}
+.LoginContainer-Custom,.ExpressLoginContainer-Custom{
+	display:-webkit-box;
+	display:-moz-box;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-moz-box-orient:vertical;
+	flex-direction:column;
+}
+#LoginContainer section{
+	height:80%;
+	overflow-y:auto;
+	/*-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(0, 0, 0); */
+}
+.LoginContainer-Section-custom,.ExpressLoginContainer-Section-Custom{
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	flex:1;
+}
+.cp-header{
+	box-sizing:border-box;
+}
+
+.cp-logo{
+	padding:2px;
+	background-size:100%;
+	height: 44px;
+	width: 100%;
+	background-size: 90%;
+	border: none;
+	outline: none;
+	border: 0px;
+	 box-sizing: border-box;
+}
+
+.cp-dropdown-image{
+	background-image: url('../imgs/dropdown_grey@2x.png');
+}
+.cp-logo-container{
+	/*padding:1% 10%;
+	box-sizing:border-box;
+	display: -webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;*/
+	
+}
+
+.cp-prepaid-card{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	display:-moz-box;
+	-moz-box-align: center; 
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	display:flex;
+	align-items:center;
+	 padding-top: 1.5%;
+	padding-left: 11px;
+	font-size: 85%;
+}
+
+.cp-subheader{
+	font-size: 79%;
+	box-sizing: border-box;
+	text-align: center;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cp-language-label-align{
+	width: 50%;
+	text-align: right;
+	display: inline-block;
+	padding-bottom: 4%;
+	font-size: 79%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.cp-login-section{
+	padding-top:2%;
+}
+.cp-login-section input{
+	width: 70%;	
+	margin: auto auto 4%;
+	/*margin: auto;
+	margin-bottom: 4%;*/
+	height:4vh;
+	min-height: 23px;
+	max-height: 37px;	
+	border-radius: 2px;
+	padding-left: 15%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	display:-moz-box;
+	-moz-box-pack: center; 
+	display:-ms-flexbox;
+	-ms-flex-pack:center;
+	display:flex;
+	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 84%;
+	border: none;
+	font-family:inherit;
+}
+.cp-captcha-Login-container{
+	width: 100%;
+}
+.cp-checkbox-on{  
+		background: #FFFFFF;
+		background-image: url("../imgs/black_checkmark@2x.png");
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: contain;
+}
+.cp-checkbox-off{
+	background: white;
+}
+
+.cp-login-section > .cp-username {
+	background-image: url("../imgs/enter_userID_icon_2x.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 10% 92%;
+}
+
+.cp-login-section > .cp-password {
+	background-image: url("../imgs/enter_password_icon_2x.png");
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 10% 92%;
+}
+
+.cp-gradient{
+	background: -webkit-linear-gradient(#00b9ee,#008fc2); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#00b9ee,#008fc2); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#00b9ee,#008fc2); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#00b9ee,#008fc2);
+}
+
+.languageSelection{
+	margin-left: 5%;
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 16%;
+	width: 36%;
+}
+.languageSelection, .languageSelection>option{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 74%;
+	padding-left: 4%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;	
+	border: none;
+	background-color: white;
+	min-height: 19px;
+}
+.languageSelection>option{
+	width:100%;/******Mozilla UI Fix********/
+}
+select::-ms-expand {
+    display: none;
+}
+.cp-forgot-section{
+	text-align: center;
+	font-size: 80%;
+	padding-bottom:3%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.cp-info,.cp-tips-info{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	background: url("../imgs/info.png") no-repeat center;
+	background-size: contain;
+	width: 3%;
+	height: 3%;
+	min-width: 15px;
+	min-height: 15px;
+	max-height: 1vh;
+	max-width: 1vh;
+}
+.cp-info_w{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;	
+	background: url("../imgs/info_w.png") no-repeat center;
+	background-size: contain;
+	width: 3%;
+	height: 3%;
+	min-width: 15px;
+	min-height: 15px;
+	max-height: 1vh;
+	max-width: 1vh;
+}
+.cp-separator{
+	font-size:125%;
+}
+.cp-signon-section{
+	width:85%;
+	margin:auto;
+	display: -webkit-box;
+	box-sizing: border-box;
+	padding-bottom:3%;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	padding-top: 4%;
+}
+
+.cp-container-checkbox{
+	width: 50%;
+	display: -webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+	
+}
+.cp-checkbox{
+	height: 4vh;
+	width:4vh;
+	min-height: 28px;
+	min-width: 28px;
+	max-height: 32px;
+	max-width: 32px;
+	border-radius: 5px;
+}
+
+
+.cp-rememberme{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display:-moz-box;
+	-moz-box-align: center; 
+	-moz-box-pack:center;
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	-ms-flex-pack:center;
+	display:flex;
+	align-items:center;
+	justify-content: center;	
+	padding-left: 10%;
+	font-size: 78%;
+	width:40%;
+	font-family: Arial, Helvetica, sans-serif;
+	min-height:28px;
+	height:auto;
+	display:inline-block;
+	
+}
+
+.cp-login-overflow{
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(0, 0, 0); 
+}
+.cp-forgotUserId{
+	display:inline-block;
+	width:27%;
+}
+
+.cp-forgot-password{
+	display:inline-block;
+	width:30%;
+}
+.cp-signon{
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display:-moz-box;
+	-moz-box-align: center; 
+	-moz-box-pack:center;
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	-ms-flex-pack:center;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	width: 50%;
+	border-radius: 2px;
+	height: 4vh;
+	min-height:28px;
+	max-height: 40px;
+	font-size: 82%;
+	font-weight: bold;
+
+}
+
+.cp-register-container{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	display: -moz-box;
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	display: flex;	
+	font-size: 85%;
+	padding-left: 7%;
+	padding-top: 2%;
+	padding-right: 7%;
+	box-sizing: border-box;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 2%;
+	font-family: Arial, Helvetica, sans-serif;
+	background:#0075a8;
+}
+.cp-register-container>div:first-child{
+	font-size: 82%;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	display:-moz-box;
+	-moz-box-align: center; 
+	width: 25%;
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	display:flex;
+	align-items:center;
+	
+}
+.cp-register-container>div:nth-child(2){
+	display: -webkit-box;
+	-webkit-box-align: center;
+	display:-moz-box;
+	-moz-box-align: center; 
+	width: 10%;
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	display:flex;
+	align-items:center;
+	
+}
+.cp-register-container>div:nth-child(3){
+	width: 66%;
+	font-size: 72%;
+	text-align: center;
+}
+.cp-pre-login-container{
+	padding: 4% 0;
+	background: white;
+	text-align: center;
+	margin-bottom:15%;/**Changes after device fix**********/	
+}
+.cp-pre-login-container>div{
+	width: 85%;
+	margin: auto;	
+	margin-bottom: 4%;
+	/**height: 12vh; Changes after device fix**********/
+	min-height: 35px;
+	height:auto;	
+}
+.cp-expresslogin-conatiner>div:first-child,
+.cp-atmlocator-conatiner>div:first-child,.cp-FAQ-conatiner>div:first-child,.cp-reward-conatiner>div:first-child{
+	
+	font-size: 110%;
+	width:100%;
+	padding:3% 3%;
+	box-sizing: border-box;
+}
+.cp-expresslogin-conatiner>div>div:nth-child(2),
+.cp-atmlocator-conatiner>div>div:nth-child(2),.cp-FAQ-conatiner>div>div:nth-child(2),.cp-reward-conatiner>div>div:nth-child(2){
+	
+	font-size: 65%;
+
+}
+.cp-footer-custom{
+	/*position:relative;*/
+	width:100%;
+	
+}
+.cp-footer{
+	position:fixed;
+   	bottom:0px;
+   	width:100%;
+	
+}
+.cp-footer-container{
+	width: 97%;
+	margin: auto;
+	font-size: 56%;
+	padding: 1% 0;
+}
+.cp-footer-row1{
+	text-align:center;
+	/*display: -webkit-box;
+	-webkit-box-pack:center;      
+    display: -moz-box;        
+    display: -ms-flexbox;
+    -ms-flex-pack:justify;     
+    /*display: -webkit-flex;    
+    display: flex;
+    justify-content: space-around;*/
+    padding-bottom: 2%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.cp-footer-row1>span{
+	padding:0 2%;	
+	color: gray;
+}
+.cp-footer a,.cp-forgot-section a,.cp-footer-custom a{
+	text-decoration:none;
+}
+
+.cp-footer a,.cp-footer-custom a{
+	display: inline-block;
+  	width: 29%;
+}
+.cp-fullsite-link{
+	width:22% !important;
+}
+.cp-pre-login-container a{
+	
+	text-decoration:none;
+}
+.cp-footer-row2{
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size:100% !important;
+	
+}
+
+/*Express Login CSS*/
+
+#ExpressLoginContainer{
+	margin:auto;
+	height:100%
+	
+}
+
+#ExpressLoginContainer section {
+	height:80%;
+}
+
+#cp-Express-login-section{
+	background:#FFFFFF;
+	width:100%;
+	height: auto;
+	overflow: auto;
+	max-height:100%;
+	/* -webkit-overflow-scrolling: touch; */
+}
+
+.cp-Express-input-section{
+	margin-bottom:5%;
+}
+
+.cp-Express-input-section input{
+	width: 76%;
+	margin: auto;
+	height: 37px;
+	border-radius: 2px;
+	padding-left: 4%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	display:-ms-flexbox;
+	-ms-box-pack:center;
+	display: flex;
+	justify-content: center;
+	font-size: 85%;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;   
+	box-sizing: border-box; 
+	margin-bottom:1px;
+}
+.cp-Express-input-section>.cp-security{
+	
+	/*border-bottom: 0.15em solid #00BDF2 !important;
+	border-left: 0.2em solid #00BDF2 !important;
+	border-right: 0.2em solid #00BDF2 !important;
+	border-top	:0.1em solid #00BDF2 ;*/
+}
+
+.cp-Aceess{
+	background:#FFFFFF;
+	font-size:80%;
+	margin-top:1%;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 2%;	
+	text-align:left;
+	margin-left:13%;
+	margin-right:13%;
+}
+.cp-access-message{			
+	background: #FFFFFF;
+	font-size: 80%;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 2%;
+	margin-left:13%;
+	margin-right:13%;	
+}
+.cp-button{
+	text-align: center;
+	margin-bottom:4%
+}
+		
+.cp-card-logo{
+	
+	height: 40%;
+	min-height: 200px;
+	background-size: 100%;
+	width: 80%;
+	background-position: center;
+	margin: auto;
+	max-width: 332px; 
+	max-height: 236px;
+}
+	
+.cp-continue-button,.cp-continue-button-recurring,.cp-close-button{	
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	-ms-flex-pack:center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	font-size: 79%;
+	height: 70%;
+ 	min-height: 30px; 
+	max-height: 50px;
+}
+.cp-cancel-button-color{
+	  background: #97999B;
+	  color:#FFFFFF;
+}
+.cp-cancel-button,.cp-cancel-button-postal{	
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: -moz-box;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	-ms-flex-pack:center;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	width: 25%;
+	font-size: 79%;
+	height: 70%;
+ 	min-height: 30px; 
+	max-height: 50px;
+	margin-left: 2%;	
+}
+.cp-continue-cancel-btn{	
+	margin-bottom: 11%;
+	width: 100%;
+	text-align: center;
+	height: 8%;
+	max-height:50px; 
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	display: -moz-box;
+	-moz-box-pack: center;
+	display:-ms-flexbox;
+	-ms-flex-pack:center;
+	display:flex;
+	justify-content:center;
+	
+}
+	
+#cp-express-login-postal-section{
+		background-color: #FFFFFF;
+		width:100%;
+		height:100%;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		-webkit-transform: translate3d(0, 0, 0); 
+	}
+.cp-express-login-postal-page{
+	height:100%;
+}
+.cp-exp-login-section input{	
+		width: 70%;
+		margin: auto;
+		height: 30px;	
+		border-radius: 2px;
+		padding-left: 10%;
+		display: -webkit-box;
+		-webkit-box-pack: center;
+		display:-ms-flexbox;
+		-ms-flex-pack:center;
+		display:flex;
+		justify-content: center;
+		background:#FFFFFF;
+		font-family: Arial, Helvetica, sans-serif;
+}
+.cp-checkbox-on{/*Checkbox on state with  tick image*/
+	background: #FFFFFF;
+	background-image: url("../imgs/black_checkmark.png");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.show{
+	display:block;
+}
+
+.cp-exp-phone-section {		
+	padding-bottom: 5%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-left:12%;
+}
+.cp-exp-phone-text-areacode{
+	width:27%;
+	height: 37px;
+	box-sizing: border-box;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:85%;
+	padding-left:4%;
+			
+}
+.cp-exp-phone-text{
+	 width:54%;
+	 height: 37px;
+	 box-sizing: border-box;
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size:85%;
+	 padding-left:4%;
+}
+
+.cp-exp-field-separator{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding: 0 2%;
+	font-size: 80%;
+}
+/* Image captcha in Registration*/
+.cp-captcha-registration-container{
+    width: 100%;
+    background: white
+}
+
+.cp-preloginbutton-color{/*Styles and color for all the pre login buttons like ATM Locator, FAQs and Express login*/
+	  border: 5px solid;
+	  background: #EEEEEE;
+}
+
+
+.cp-signOn-color{/*SignOn Button color can be provided here*/
+	background: #dbdbdb;
+} 
+
+.cp-card-logo-image{/*Express login card logo image can be provided here*/
+	  background: url("../imgs/express_login_cardimage@2x.png") no-repeat;
+  	  background-size: contain;
+}
+
+/********************2x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+       	
+	.cp-dropdown-image{
+    	background-image: url("../imgs/dropdown_grey@2x.png");
+ 	}
+
+	.cp-login-section > .cp-username {
+		/*background-image: url("../imgs/enter_userID_icon@2x.png");*/
+		background-image: url("../imgs/enter_userID_icon_2x.png");
+	}
+	.cp-login-section > .cp-password{
+		/*background-image: url("../imgs/enter_password_icon@2x.png");*/
+		background-image: url("../imgs/enter_password_icon_2x.png");
+	}
+	.cp-checkbox-on{  	
+		background: #FFFFFF;
+		background-image: url("../imgs/black_checkmark@2x.png");
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: contain;
+	}
+	.cp-card-logo-image{
+		background: url("../imgs/express_login_cardimage@2x.png") no-repeat;
+		background-size: contain;
+   }
+   .cp-info,.cp-tips-info{
+		background: url("../imgs/info@2x.png") no-repeat center;
+		background-size: contain;
+		width: 3%;
+		height: 3%;
+		min-width: 15px;
+		min-height: 15px;
+		max-height: 1vh;
+		max-width: 1vh;
+	}
+	.cp-info_w{
+			
+	background: url("../imgs/info_w@2x.png") no-repeat center;
+	background-size: contain;
+	width: 3%;
+	height: 3%;
+	min-width: 15px;
+	min-height: 15px;
+	max-height: 1vh;
+	max-width: 1vh;
+	}	
+}
+
+
+
+/********************3x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+       	
+	.cp-dropdown-image{
+    	background-image: url("../imgs/dropdown_grey@3x.png");
+ 	}
+	.cp-login-section > .cp-username {
+		/*background-image: url("../imgs/enter_userID_icon@3x.png");*/
+		background-image: url("../imgs/enter_userID_icon_3x.png");
+	}
+	.cp-login-section > .cp-password{
+		/*background-image: url("../imgs/enter_password_icon@3x.png");*/
+		background-image: url("../imgs/enter_password_icon_3x.png");
+	}
+	 .cp-checkbox-on{  
+	 	background: #FFFFFF;	
+		background-image: url("../imgs/black_checkmark@3x.png");
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: contain;
+	}
+	.cp-card-logo-image{
+		background: url("../imgs/express_login_cardimage@3x.png") no-repeat;
+		background-size: contain;
+	}
+    .cp-info,.cp-tips-info{
+		background: url("../imgs/info@3x.png") no-repeat center;
+		background-size: contain;
+        width: 3%;
+		height: 3%;
+		min-width: 15px;
+		min-height: 15px;
+		max-height: 1vh;
+		max-width: 1vh;
+	}
+	.cp-info_w{
+			
+	background: url("../imgs/info_w@3x.png") no-repeat center;
+	background-size: contain;
+	width: 3%;
+	height: 3%;
+	min-width: 15px;
+	min-height: 15px;
+	max-height: 1vh;
+	max-width: 1vh;
+	}	
+}	
+
+	
+/**********************Landscape Orientation for Phones**************************/
+@media only screen and (min-device-width:320px)  and (max-device-width:900px) and (orientation:landscape) {
+	/*********************** Login Page************************************************/
+	.cp-logo {
+		height : 64px !important;  
+	}
+	#LoginContainer section{
+		height:65% !important;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		-webkit-transform: translate3d(0, 0, 0);  
+	}
+	.cp-subheader{
+		padding-top:1% !important;
+		padding-bottom:1% !important;
+	}
+	.languageSelection {
+		   background-size: 10% !important;
+	}
+	.languageSelection, .languageSelection>option{
+		min-height: 22px !important;
+	}
+	.cp-login-section > .cp-username {
+		background-size: 7% 92% !important;
+	}
+	.cp-login-section > .cp-password{
+		background-size: 7% 92% !important;
+	}
+	.cp-login-section input{
+		width:75% !important;
+		height:7.5vh !important;
+		max-height:50px !important;
+		padding-left:10% !important;
+	}
+	.cp-register{
+		display:inline-block;
+		width:27%;
+	}
+	.cp-signon{
+		height:8.5vh !important;
+		width:35% !important;
+		max-height:50px;
+	}
+	.cp-container-checkbox{
+		width:70% !important
+	}	
+	.cp-footer-row1{
+		padding-bottom:1% !important;
+	}
+	.cp-footer-row2{					
+		font-size: 100% !important;
+	}
+	.cp-forgot-section *{
+		font-size:90% !important;
+	}
+	.cp-login-overflow{
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		-webkit-transform: translate3d(0, 0, 0); 
+	}
+	/***********************Express Login Page************************************************/	
+	#ExpressLoginContainer section{
+		height:60% !important;
+	}
+	.cp-continue-button,.cp-cancel-button,.cp-cancel-button-postal{
+    	height:100% !important;
+    }
+}
+/******************Common for Both Orientations Tablets**************************************/
+@media only screen and (min-device-width: 600px){
+	
+
+    .cp-continue-cancel-btn{
+    	height: 40px;
+    	min-height:40px;
+    }
+    .cp-continue-button,.cp-cancel-button,.cp-cancel-button-postal,.cp-confirm-button,.cp-continue-button-recurring{
+    	height:110% !important;
+    }
+    #cp-container input:not([type='checkbox']):not([type='radio']), #cp-modal-container input:not([type='checkbox']):not([type='radio']){
+    	height: 50px;
+    }
+     
+	
+}
+
+/*********************Portrait Orientation For Tablets***************/
+@media only screen and (min-device-width: 600px) and (orientation:portrait){
+	.cp-logo {
+		height : 64px !important; 
+	}
+	.languageSelection{
+    	background-size: 10% !important;
+    }
+}
+
+/************Landscape Orientation for Tablets**************************/	
+@media only screen  and (min-device-width:901px) and (orientation:landscape) {
+	.cp-logo {
+		height : 84px !important;  
+	}
+	.cp-subheader{
+		padding-top:1% !important;
+		padding-bottom:1% !important;
+	}
+	.languageSelection{
+    	background-size: 8% !important;
+    }
+    .cp-login-section > .cp-username {
+		background-size: 5% 92% !important;
+	}
+	.cp-login-section > .cp-password{
+		background-size: 5% 92% !important;
+	}
+	.cp-login-section input{
+		width:77% !important;
+		height:4.5vh !important;
+		max-height:50px !important;
+		padding-left:8% !important;
+	}
+	.cp-container-checkbox{
+		width:70% !important
+	}
+	.cp-signon{
+		height:5vh !important;
+		width:35% !important;
+		max-height:50px;
+	}
+	.cp-continue-button{
+		width:25% !important;
+	}
+	.cp-footer-row1{
+		padding-bottom:1% !important;
+	}
+	/***********************Express Login Page************************************************/	
+	.cp-Express-input-section input{
+		height:45px !important;
+	}
+}
+
+
+
+
+
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+	.cp-footer{		
+		max-width:1024px;
+	}
+}

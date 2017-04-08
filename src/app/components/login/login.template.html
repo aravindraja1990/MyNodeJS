@@ -1,0 +1,77 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div id="LoginContainer">
+	<header>
+		<div class="cp-header">
+			<div class='cp-logo-container'>
+			<div class='cp-branding-logo-image cp-logo'></div>				
+			</div>
+			<div class="cp-language-mapping cp-backgroundcolor1 cp-textcolor1 cp-subheader" data-translateIdentifier='cp.login.accessAndManageYourPrepaidAccounts'>Access and Manage Your Prepaid Accounts</div>
+		</div>
+	</header>
+	<section>
+		<div class='cp-gradient cp-login-gradient-background'>
+		<div class="cp-login-section">
+			<div class="cp-language-label-align cp-language-mapping cp-textcolor1" data-translateIdentifier='cp.login.selectLanguage'>Select Language   </div>
+					<select name="languageSelection" class="languageSelection cp-dropdown-image cp-text-message-color">
+						<option class='cp-text-message-color' value="en_US" selected="true">English</option>
+						<option class='cp-text-message-color' value="sp_US">Español</option>
+						<option class='cp-text-message-color' value="fr_CA">Français</option>
+					</select>
+			<input type="text" class="cp-username cp-login-input cp-language-mapping" maxlength="20" data-translateIdentifier='cp.login.userName' ng-model = "$ctrl.username" placeholder="Enter User ID" ></input>
+			<input type="password" class="cp-password cp-login-input cp-language-mapping"  data-translateIdentifier = "cp.profile.update_password.verify.text"  maxlength="50" ng-model = "$ctrl.password" placeholder="Enter Password">
+		</div>
+		<div class="cp-forgot-section cp-textcolor1">
+			<span  class="cp-register cp-language-mapping" data-translateIdentifier='common.register'>Register</span>
+			<span class='cp-separator'>|</span>
+			<span class="cp-forgotUserId cp-language-mapping" data-translateIdentifier='cp.login.forgotUserId' maxlength="20">Forgot User ID</span>
+			<span class='cp-separator'>|</span>
+			<a href='<%-model.redirectURLs.FORGOT_PASSWORD_EN%>' target='_blank' class="cp-forgot-password cp-language-mapping cp-textcolor1" data-translateIdentifier='forgot_password' >Forgot Password</a>
+		</div>
+		<div class="cp-signon-section">
+			<div class="cp-container-checkbox">
+				<div class="cp-checkbox cp-checkbox-off"></div>	
+				<div class="cp-rememberme cp-language-mapping cp-textcolor1" data-translateIdentifier='cp.login.rememberId'>Remember ID</div>
+			</div>
+			<div class="cp-signon cp-language-mapping cp-textcolor3 cp-signOn-color" data-inputType="button" data-translateIdentifier='cp.login.signon' ng-click="$ctrl.validateUser()">Sign On</div>
+		</div>
+		</div>
+		<div class="cp-pre-login-container">
+			<div class="cp-expresslogin-conatiner cp-button-transition cp-bordercolor1 cp-preloginbutton-color" data-inputType="button">
+				<div>
+					<div class="cp-language-mapping cp-textcolor3" data-translateIdentifier='cp.login.expressLogin'>Express Login</div>
+					<div class="cp-language-mapping greyFont" data-translateIdentifier='cp.common.checkBalance'>Click here to view your balance and transactions</div>
+				</div>
+			</div>
+			<div class="cp-atmlocator-conatiner cp-button-transition cp-bordercolor1 cp-preloginbutton-color" data-inputType="button">
+				<div>
+					<a href='<%-model.redirectURLs.ATM_LOCATOR%>' target='_blank' class="cp-language-mapping cp-textcolor3" data-translateIdentifier='cp.common.atm.locator'>ATM Locator</a>
+					<div class="cp-language-mapping greyFont" data-translateIdentifier='cp.login.atm.locator.text'>Find Citi ATMs near you</div>
+				</div>
+			</div>
+			<div class="cp-FAQ-conatiner cp-button-transition cp-bordercolor1 cp-preloginbutton-color" data-inputType="button">
+				<div>
+					<div class="cp-language-mapping cp-textcolor3" data-translateIdentifier='cp.common.faq'>FAQs</div>
+					<div class="cp-language-mapping greyFont" data-translateIdentifier='cp.login.faq.text'>Answers to questions about your prepaid card</div>
+				</div>
+			</div>
+			<div class="cp-reward-conatiner cp-button-transition cp-bordercolor1 cp-preloginbutton-color" data-inputType="button">
+				<div>
+					<div class="cp-language-mapping cp-textcolor3" data-translateIdentifier='cp.login.redeemPaymentCode'>Redeem Payment Code</div>
+					<div class="cp-language-mapping greyFont" data-translateIdentifier='cp.dashboard.clickToRedeem'>Click here to reedem your payment</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="cp-footer cp-backgroundcolor1">
+		<div class="cp-footer-container cp-textcolor1">
+			<div class="cp-footer-row1">
+				<a href='' target='_blank' class="cp-termsandconditions-link cp-language-mapping cp-textcolor1" data-translateIdentifier='cp.notification.terms_and_conditions'>Terms and Conditions</a><span> | </span>
+				<a href='' target='_blank' class="cp-privacy-link cp-language-mapping cp-textcolor1" data-translateIdentifier='cp.footer.privacy'>Privacy statement</a><span> | </span>
+				<a href='' target='_blank' class="cp-fullsite-link cp-language-mapping cp-textcolor1" data-translateIdentifier='cp.footer.fullsite'>View Full Site</a>
+			</div>
+			<div class="cp-footer-row2 cp-textcolor1">
+			</div>
+		</div>
+	</div>
+</div>
+</script>

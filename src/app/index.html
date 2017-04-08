@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cpApp" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learn Angular</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../core/css/common.css">
+    <link rel="stylesheet" href="../core/css/cpBranding.css">
+  <link rel="stylesheet" href="components/login/login.css">
+</head>
+<body>
+  <div ng-view></div>
+  <script src="../lib/angular.js"></script>
+  <script src="../lib/angular-route.js"></script>
+  <script src="app.js"></script>
+   <script src="../core/settings/settings.module.js"></script>
+    <script src="../core/settings/settings.service.js"></script>
+  <script src="components/login/login.module.js"></script>
+  <script src="components/login/login.component.js"></script>
+  <script src="components/home/home.component.js"></script>
+  <script>
+					var xmlhttp;
+				    if (window.XMLHttpRequest) {				       
+				        xmlhttp = new XMLHttpRequest();
+				    } else {				        
+				        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				    }
+					 xmlhttp.onreadystatechange = function() {
+				        if (xmlhttp.readyState == 4 ) {
+				           if(xmlhttp.status == 200){	
+				           	var response = JSON.parse(xmlhttp.responseText).successResponse;				           
+				           }
+				        }
+				    };
+				
+				    xmlhttp.open("GET", "/getPayee", false);
+				    xmlhttp.send();			
+  </script>
+</body>
+</html>

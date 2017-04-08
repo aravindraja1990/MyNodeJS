@@ -1,0 +1,905 @@
+.uiDisabled{
+	pointer-events:none;
+}
+
+.hidden{
+	display:none !important;
+}
+html{
+	height:100%;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0px;
+	height:100%;
+	overflow-y:auto;
+	/*-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(0, 0, 0); */
+	font-size:100%;
+}
+textarea:focus, input:focus, select:focus{
+    outline: none !important;
+}
+.webkitForceHardwareAcceleration {
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	transform: translate3d(0, 0, 0);
+}
+#cp-container{
+	max-width: 1024px; 
+	margin: auto;
+	height:100%;
+	position:relative;
+}
+
+.cp-overflow-x-hidden{
+	overflow-x:hidden;
+}
+#main-container{
+	height:100%;
+}
+.uiDisabled{
+	pointer-events: none;
+	background: #97999B !important;
+	color:#FFFFFF;	
+}
+.hide{
+	display:none;
+}
+.cp-removeVisibility{
+	visibility:hidden;
+}
+.dropdownImg{
+	background-image: url("../imgs/Dropdown-Handle.png") no-repeat center;
+	background: rgb(243,243,243);
+	position: relative;
+	left: 10px;
+	top: 0px;
+	height: 12px;
+}
+.scroller-navigate{
+	width:100%;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;	
+}
+.scroller-navigate-flex{
+	width:100%;
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+}
+.pageTransitionLeft {
+	-webkit-animation : presentListLeft 0.5s;
+	-moz-animation: presentListLeft 0.5s;
+	-o-animation:presentListLeft 0.5s;
+	animation:presentListLeft 0.5s;
+}
+.pageTransitionRight{
+	position:relative;
+	left:-100%;
+	-webkit-animation : presentListRight 0.5s;
+	-moz-animation: presentListRight 0.5s;
+	-o-animation:presentListRight 0.5s;
+	animation:presentListRight 0.5s;
+}
+.cp-gray-border {
+    border: 1px solid #C3C0C0;
+}
+.cp-cancel-modal{
+	position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 8%;
+    min-height: 15%;
+    background: red;
+    background: url("../imgs/close.png") no-repeat;
+    background-size: 75%;
+    background-position: left center;
+}
+@-webkit-keyframes presentListLeft {
+	from {-webkit-transform: translateX(0%);
+	}
+	to {
+	-webkit-transform: translateX(-50%);
+	}
+}
+@-webkit-keyframes presentListRight {
+	from {-webkit-transform: translateX(0%);
+	}
+	to {
+	-webkit-transform: translateX(50%);
+	}
+}
+@keyframes presentListLeft {
+	from {transform: translateX(0%);
+	}
+	to {
+	transform: translateX(-50%);
+	}
+}
+
+@keyframes presentListRight {
+	from {transform: translateX(0%);
+	}
+	to {
+	transform: translateX(50%);
+	}
+}
+
+@-moz-keyframes presentListLeft {
+	
+	from {-moz-transform: translateX(0%);
+	}
+	to {
+	-moz-transform: translateX(-50%);
+	}
+}
+@-moz-keyframes presentListRight {
+	from {-moz-transform: translateX(0%);
+	}
+	to {
+	-moz-transform: translateX(50%);
+	}
+}
+
+@-o-keyframes presentListLeft {
+	
+	from {-o-transform: translateX(0%);
+	}
+	to {
+	-o-transform: translateX(-50%);
+	}
+}
+@-o-keyframes presentListRight {
+	from {-o-transform: translateX(0%);
+	}
+	to {
+	-o-transform: translateX(50%);
+	}
+}
+/* Alert Message CSS */
+
+.errorOverlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/*background-color: rgba(0, 0, 0, 0.3);*/
+	opacity: 1;
+	display: none;
+	z-index: 1234;
+}
+
+.overLay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1
+}
+.cp-redAlert{
+	color:red;
+	font-weight:normal !important;
+}
+.errorAlert {
+	font-size: 90%;
+	color: #666666;
+	position: relative;
+	text-align: center;
+	border-radius: 5px;
+	background: -webkit-radial-gradient(#e6e6e6, #f8f8f8);
+	background: -o-radial-gradient(#e6e6e6, #f8f8f8); /* For Opera 11.6 to 12.0 */
+ 	 background: -moz-radial-gradient(#e6e6e6, #f8f8f8); /* For Firefox 3.6 to 15 */
+  	background: radial-gradient(#e6e6e6, #f8f8f8); /* Standard syntax */
+	width: 250px;
+	padding-top: 30px;
+	top: 50%;
+	left: 50%;
+	margin-top: -77px;
+	margin-left: -125px;
+}
+.errorAlertButton {
+	color: #4a9ffc;
+	height: 95%;
+	width: 100%;
+	font-family: Arial;
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display:-moz-box;
+	-moz-box-align: center; 
+	-moz-box-pack: center;
+	display:-ms-flexbox;
+	-ms-flex-align: center; 
+	-ms-flex-pack: center;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background: #f9f9f9;
+	/*border-radius: 5px;*/
+	background: -webkit-radial-gradient(#e6e6e6, #f8f8f8);
+	background: -o-radial-gradient(#e6e6e6, #f8f8f8); /* For Opera 11.6 to 12.0 */
+  	background: -moz-radial-gradient(#e6e6e6, #f8f8f8); /* For Firefox 3.6 to 15 */
+  	background: radial-gradient(#e6e6e6, #f8f8f8); /* Standard syntax */
+	
+}
+
+.errorAlertHeader{
+	word-wrap: break-word;
+	font-weight:bolder;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+.errorAlertFooter{
+	margin-top: 8px;
+	border-top: 1px solid #d3d3f3;
+	height: 40px;
+	display: -webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:flex;
+}
+.errorAlertContent{
+	word-wrap: break-word;
+	padding: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.cp-half-width{
+	width:50%;
+}
+.zeroPadding{
+	padding:0 !important;
+}
+/* Loader or Spinner CSS */
+#cp-container .loaderOverlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	z-index: 1234;
+	display: none;
+}
+
+#cp-container  .loaderImg {
+	background-image: url("../imgs/spinner@1x.gif");
+	top: 50%;
+	left: 50%;
+	height: 36px;
+	width: 36px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: center;
+	border-radius: 16px;
+	margin: -50px -20px;
+}
+.cp-continue-button-vertical,.cp-cancel-button-vertical{
+	width:60%;
+	margin:auto;
+	text-align:center;
+	margin-bottom:4%;	
+	  display: -webkit-box;
+	  -webkit-box-pack: center;
+	  -webkit-box-align:center;
+	  display: -ms-flexbox;
+	  -ms-flex-pack: center;
+	  -ms-flex-align:center;
+	  display: flex;
+	  align-items:center !important;
+	  justify-content: center;
+	  height: 30px;
+	max-height: 50px;
+	font-size: 85%;
+}
+
+/****************************CSS for handling Animations**********************/
+#cp-modal-container{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+}
+
+#modalElement{
+	background:white;
+	height:100%;
+	/*overflow-y: auto;*/
+}
+.cp-modal-element-transparent-background{
+	background:transparent !important;
+}
+.presentModal{
+	-webkit-animation: presentModalView 0.75s;
+	-moz-animation: presentModalView 0.75s;
+	-o-animation:presentModalView 0.75s;
+	animation:presentModalView 0.75s;
+}
+
+.dismissModal{
+	-webkit-animation: dismissModalView 0.75s;
+	-moz-animation: dismissModalView 0.75s;
+	-o-animation: dismissModalView 0.75s;
+	animation: dismissModalView 0.75s;
+}
+
+@-webkit-keyframes presentModalView {
+	
+	from {
+		-webkit-transform: translateY(150%);
+	}
+	to {
+	-webkit-transform: translateY(0%);
+	}
+}
+@-webkit-keyframes dismissModalView {
+	from {-webkit-transform: translateY(0%);
+	}
+	to {
+	-webkit-transform: translateY(150%);
+	}
+}
+
+@keyframes presentModalView {
+	from {
+		transform: translateY(150%);
+	}
+	to {
+	transform: translateY(0%);
+	}
+}
+
+@keyframes dismissModalView {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+	transform: translateY(150%);
+	}
+}
+
+@-moz-keyframes presentModalView {
+	
+	from {
+		-moz-transform: translateY(150%);
+	}
+	to {
+	-moz-transform: translateY(0%);
+	}
+}
+@-moz-keyframes dismissModalView {
+	from {-moz-transform: translateY(0%);
+	}
+	to {
+	-moz-transform: translateY(150%);
+	}
+}
+
+@-o-keyframes presentModalView {
+	
+	from {
+		-o-transform: translateY(150%);
+	}
+	to {
+	-o-transform: translateY(0%);
+	}
+}
+@-o-keyframes dismissModalView {
+	from {-o-transform: translateY(0%);
+	}
+	to {
+	-o-transform: translateY(150%);
+	}
+}
+/***********************CSS for handling flip animations***************************/
+
+.cp-flip-initial {	
+  -webkit-transform: rotateY(-90deg);
+   -moz-transform:rotateY(-90deg);
+   -o-transform:rotateY(-90deg);
+   -ms-transform:rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+.cp-flip-front{
+	 -webkit-transform: rotateY(-180deg);
+	 -moz-transform:rotateY(-180deg);
+	 -o-transform:rotateY(-180deg);
+	 -ms-transform:rotateY(-180deg);
+     transform: rotateY(-180deg);
+}
+
+.cp-flip-back{
+	-webkit-transform: rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+	-o-transform:rotateY(0deg);
+	-ms-transform:rotateY(0deg);
+     transform: rotateY(0deg);
+}
+
+.cp-flip-front,
+.cp-flip-back,.cp-visibility {
+  -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition:-o-transform 1s;
+  -ms-transition:-ms-transform 1s;
+  transition:transform 1s;
+}
+.tempContainerVisibility{
+	z-index: 100;
+}
+.tempContainer,.main-container-position{
+	position:absolute;
+	height:100%;
+	width:100%;
+	left:0;
+	right:0;
+	background:white;
+}
+
+/**********************CSS for handling fade animations*********************/
+.cp-fadeTo{
+	
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+.cp-fadeIn{
+	 -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+/*************************CSS for handling button animations*************/
+
+.cp-button-transition{
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	-ms-transition:all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.cp-button-selected-animated{
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	transform:scale(1.1);
+}
+
+/**************************Info-Tool-Tip**********************/
+#cp-info-popup {
+	position: fixed;
+	background: -webkit-radial-gradient(#e6e6e6, #f8f8f8);
+	background: -o-radial-gradient(#e6e6e6, #f8f8f8); /* For Opera 11.6 to 12.0 */
+ 	background: -moz-radial-gradient(#e6e6e6, #f8f8f8); /* For Firefox 3.6 to 15 */
+  	background: radial-gradient(#e6e6e6, #f8f8f8); /* Standard syntax */
+	color: #666666;
+	font-size: 11px;
+	font-weight:bold;
+	border-radius: 5px;
+	width: 65%;
+	max-width:300px;
+	font-family: Arial;
+	z-index: 210;
+	padding: 11px;
+	border: 1px solid #999999;
+	box-shadow: -2px 2px 10px 0px #545454;
+
+
+	display:none;
+}
+.cp-modal-content-check{
+	background:url("../imgs/check_US.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.cp-modal-content-check-CA{
+	background:url("../imgs/check_CA.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.cp-modal-content-card{
+	background:url("../imgs/card_sec.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.down-arrow ,.up-arrow{
+	height: 0px;
+	width: 0px;
+	border-left: solid 5px transparent;
+	border-right: solid 5px transparent;
+	position: absolute;
+	right: 16px;
+}
+.down-arrow{
+	border-bottom: solid 5px transparent;
+	border-top: solid 5px #FFFFFF;
+	bottom: -9px;
+}
+.up-arrow{
+	border-bottom: solid 5px #FFFFFF;
+	border-top: solid 5px transparent;
+	top: -9px;
+}
+.cp-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 40;
+	display:none;
+}
+#cp-info-wrapper {
+	overflow-y: auto;
+	/* -webkit-overflow-scrolling: touch; */
+	max-height: 100px;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.cp-info-header{
+	display: inline-block;
+	width: 100%;
+	height: 15px;
+}
+
+.cp-tooltip-close{
+	width: 10%;
+	text-align: center;
+	height: 15px;
+	right: 0px;
+	position: absolute;
+}
+
+/********** custom branding *********************/
+.greyFont{
+	color: #767676;
+}
+.blackFont{
+	color:black;
+}
+.cp-input-border{
+	border: 0.25em solid
+}
+.red{
+	color:red;
+}
+.colorEEEEEE{
+	background-color:#EEEEEE;
+}
+.cp-input-background-color{/*Input background color for all the input fields in express login and forgot user name*/
+	  color: #53565A;
+}
+.cp-red-border{/*Covers the red border for all the input mandatory fields*/
+  border: 0.25em solid #FF0000;
+ }
+ .cp-list-header-background{
+	background-color:#CCCCCC;
+	
+}
+.cp-list-header-text-color{
+	color:white;
+}
+ .cp-text-message-color{/*Covers all the static label text color in account details, forgot username,login,registration,terms and conditions content*/
+ 	  color: #53565A; 
+ }
+.cp-terms-border-box{/*Border color of the login terms and conditions*/
+	border: 2px solid #CCCCCC;
+}
+/********************2x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+       	
+   #cp-container  .loaderImg {
+	background-image: url("../imgs/spinner@2x.gif");
+	height: 36px;
+	width: 36px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+	.cp-modal-content-check{
+	background:url("../imgs/check_US@2x.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.cp-modal-content-check-CA{
+	background:url("../imgs/check_CA@2x.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.cp-modal-content-card{
+	background:url("../imgs/card_sec@2x.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.cp-cancel-modal{
+	position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 8%;
+    min-height: 15%;
+    background: red;
+    background: url("../imgs/close@2x.png") no-repeat;
+    background-size: 75%;
+    background-position: left center;
+}
+
+}
+
+
+
+/********************3x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+    #cp-container  .loaderImg {
+		background-image: url("../imgs/spinner@3x.gif");
+		height: 36px;
+		width: 36px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		position: relative;
+		background-position: center;
+	}
+	.cp-modal-content-check{
+	background:url("../imgs/check_US@3x.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+	}
+	.cp-modal-content-check-CA{
+	background:url("../imgs/check_CA@3x.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+	}
+.cp-modal-content-card{
+	background:url("../imgs/card_sec@3x.png") no-repeat;
+	background-size:contain;
+	background-position:center;
+}
+.cp-cancel-modal{
+	position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 8%;
+    min-height: 15%;
+    background: red;
+    background: url("../imgs/close@3x.png") no-repeat;
+    background-size: 75%;
+    background-position: left center;
+}
+}
+
+.cp-branding-logo-image{	/*Customize the branding logo by giving proper images here*/
+	background: url("../imgs/header@2x.png") no-repeat left;
+	background-size:100% 100% !important;
+}
+
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+/********************2x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+       	
+.cp-branding-logo-image{
+	background: url("../imgs/header@2x.png") no-repeat left;
+	background-size:100% 100% !important;	
+ }   
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc@2x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs@2x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc@2x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs@2x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+}
+
+/********************3x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+       	
+.cp-branding-logo-image{
+	background: url("../imgs/header@3x.png") no-repeat left;
+	background-size:100% 100% !important;		
+ }
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+}
+/*Handle Mobile landscape Mode CSS for all the pages here*/	
+@media only screen and (min-device-width:320px)  and (max-device-width:900px) and (orientation:landscape) {
+	
+.cp-branding-logo-image{
+	background: url("../imgs/header@3x.png") no-repeat left;
+	background-size: 100% 100% !important;
+	}
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}	
+}
+@media only screen and (min-device-height:320px)  and (max-device-height:480px) and (orientation:landscape) {
+	.cp-branding-logo-image{
+		background: url("../imgs/header@3x.png") no-repeat left;
+		background-size: 100% 100% !important;
+	}
+}
+/************Landscape Orientation for Tablets**************************/	
+@media only screen  and (min-device-width:600px) and (orientation:landscape) {/*Tablet landscape*/
+	
+.cp-branding-logo-image{
+	background: url("../imgs/header@3x.png") no-repeat left;
+	background-size: 100% 100% !important;
+	}
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs@3x.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}	
+}
+/******************Medium phones**************************************/
+@media only screen and (min-device-width: 600px){
+	body {
+			font-size:130%;
+	}
+}
+
+/******************Big phones**************************************/
+@media only screen and (min-device-width: 700px){
+	body {
+			font-size:150%;
+	}
+}
+
+/******************Big Tablets**************************************/
+@media only screen and (min-device-width: 700px) and (min-device-height: 1024px){
+	body {
+			font-size:170%;
+	}
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+	#cp-modal-container{
+		right: 0px;
+		left: 0px;
+		margin: auto;
+		max-width: 980px;
+	}
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+	
+	#cp-modal-container{
+		right: 0px;
+		left: 0px;
+		margin: auto;
+		max-width: 980px;
+	}
+}

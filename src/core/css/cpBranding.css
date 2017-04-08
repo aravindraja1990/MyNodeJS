@@ -1,0 +1,188 @@
+
+/*******************************Custom Branding CSS Start********************************************************************/
+
+.cp-backgroundcolor1,.cp-menu-selected{
+	background-color:#002D72 !important;
+}
+.cp-backgroundcolor2,.cp-button-selected{
+	background-color:#00BDF2 !important;
+} 
+.cp-textcolor1{
+	color:white;
+}
+.cp-textcolor2{
+	color:white;
+}
+.cp-textcolor3{
+	color:#002D72;
+}
+.cp-textcolor4,.cp-faq-container a{
+	color:#00BDF2;
+}
+.cp-bordercolor1{
+	border-color:#002D72;
+}
+.cp-bordercolor2{
+	border-color:#00BDF2;
+}
+.cp-login-gradient-background{/*Login form background color with suitable gradient*/
+	background: -webkit-linear-gradient(#00b9ee,#008fc2); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#00b9ee,#008fc2); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#00b9ee,#008fc2); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#00b9ee,#008fc2);
+}
+.cp-leftPanelContainer,.cp-menu-gradient{/*Gradient color of the left menu panel*/
+	background: -webkit-linear-gradient(rgb(0, 189, 242), rgb(0, 179, 240) 20%,rgb(0, 102, 179) 75%,rgb(0, 71, 133)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgb(0, 189, 242), rgb(0, 179, 240),rgb(0, 102, 179),rgb(0, 71, 133)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgb(0, 189, 242), rgb(0, 179, 240),rgb(0, 102, 179),rgb(0, 71, 133)); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(rgb(0, 189, 242), rgb(0, 179, 240) 20%,rgb(0, 102, 179) 75%,rgb(0, 71, 133));
+}
+.cp-footer-color{/*Custom style for all the footer background color*/
+	  background: -webkit-linear-gradient(#002b57, #003871);
+	  background: -o-linear-gradient(#002b57, #003871);
+	  background: -moz-linear-gradient(#002b57, #003871);
+	  background: linear-gradient(#002b57, #003871);
+}
+.cp-overlay-color{ /**Overlay text color for the card details in dash board and shop page**/
+	color:black;
+	font-family: OCRAStd;
+}
+.cp-Exp-overlay, .cp-securityCode-overlay{/***Overlay color of security code and exp overlay*******/
+	color:#58595b;
+	font-family: Myriad Pro;
+}
+.cp-branding-logo-image{	/*Customize the branding logo by giving proper images here*/
+	background: url("../imgs/header@2x.png") no-repeat left !important;
+	background-size:100% 100% !important;
+}
+
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc.png") no-repeat;
+	background-size: contain !important;
+	background-position: center !important;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+/********************2x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 5/4),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25),
+       only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (min-resolution: 1.25dppx) {
+       	
+.cp-branding-logo-image{
+	background: url("../imgs/header@2x.png") no-repeat left !important;
+	background-size:100% 100% !important;	
+ }   
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc@2x.png") no-repeat;
+	background-size: contain !important;
+	background-position: center !important;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs@2x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc@2x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs@2x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+}
+
+/********************3x devices*****************************/
+@media only screen and (-o-min-device-pixel-ratio: 9/4),
+       only screen and (-webkit-min-device-pixel-ratio: 2.25),
+       only screen and (min-device-pixel-ratio: 2.25),
+       only screen and (min-resolution: 2.25dppx) {
+       	
+.cp-branding-logo-image{
+	background: url("../imgs/header@3x.png") no-repeat left !important;
+	background-size:100% 100% !important;		
+ }
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc@3x.png") no-repeat;
+	background-size: contain !important;
+	background-position: center !important;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs@3x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc@3x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs@3x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+}
+
+/*Handle Mobile landscape Mode CSS for all the pages here*/	
+@media only screen and (min-device-width:320px)  and (max-device-width:900px) and (orientation:landscape) {
+	
+.cp-branding-logo-image{
+	background: url("../imgs/header@3x.png") no-repeat left !important;
+	background-size: 100% 100% !important;
+	}
+.cp-cardfront-mc-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_mc@3x.png") no-repeat;
+	background-size: contain !important;
+	background-position: center !important;
+}
+
+.cp-cardfront-vs-image{/****Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_front_vs@3x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-mc-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_mc@3x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+.cp-cardback-vs-image{/****Back Card image to be shown on Dashboard , Shop, Request Plastic Page *******************/
+	background: url("../imgs/card_back_vs@3x.png") no-repeat !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+}
+@media only screen and (min-device-height:320px)  and (max-device-height:480px) and (orientation:landscape) {
+	.cp-branding-logo-image{
+		background: url("../imgs/header@3x.png") no-repeat left !important;
+		background-size: 100% 100% !important;
+	}
+}
+/************Landscape Orientation for Tablets**************************/	
+@media only screen  and (min-device-width:600px) and (orientation:landscape) {/*Tablet landscape*/
+	
+.cp-branding-logo-image{
+	background: url("../imgs/header@3x.png") no-repeat left !important;
+	background-size: 100% 100% !important;
+	}	
+}
