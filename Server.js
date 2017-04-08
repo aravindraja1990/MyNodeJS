@@ -19,8 +19,8 @@ http.createServer(function (request, response) {
 		fsPath = "http://retailbanking.mybluemix.net/banking/icicibank/listpayee?client_id=mypriya08@gmail.com&token=212c57fe7974&custid=33337369";
 		console.log('inside'+fsPath);
 		var options = {
-			hostname:"retailbanking.mybluemix.net/banking/icicibank",
-			path:"/listpayee?client_id=mypriya08@gmail.com&token=212c57fe7974&custid=33337369"
+			host:"retailbanking.mybluemix.net",
+			path:"/banking/icicibank/listpayee?client_id=mypriya08@gmail.com&token=212c57fe7974&custid=33337369"
 
 		}
 		
@@ -33,19 +33,24 @@ http.createServer(function (request, response) {
 
 		res.on('end', function(){
         var fbResponse = JSON.parse(body);
+        response.writeHead(200, {"Content-Type": "application/json"})
+        //response.setHeader('Content-Type', 'application/json');
         console.log("Got a response: ", fbResponse);
+        response.end(JSON.stringify(fbResponse));
 		});
 		}).on('error', function(e){
 			console.log("Got an error: ", e);
 		});
-	}	
-     response.writeHead(200)
+	}else{
+	  response.writeHead(200)
      var fileStream = fs.createReadStream(fsPath)
      fileStream.pipe(response)
      fileStream.on('error',function(e) {
          response.writeHead(404)     // assume the file doesn't exist
          response.end()
      })
+	}	
+     
    } catch(e) {
      response.writeHead(500)
      response.end()     // end the response so browsers don't hang
